@@ -1,0 +1,317 @@
+*,::before, ::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.logo{
+    height: 40px;
+}
+.navigation{
+    z-index: 1000;
+    top: 0;
+}
+.nav-button{
+    height: 40px;
+}
+.over-show{
+    font-size: 120px;
+    font-weight: bolder;
+    color: white;
+    top: 25%;
+    left: 50%;
+    transform: translatex(-50%);
+    animation: slide-in 3s ease-in-out 1s forwards;
+    opacity: 0;
+}
+@keyframes slide-in{
+    0% {
+        left: 1000%;
+        opacity: 0;
+    }
+    100%{
+        left: 50%;
+        opacity: 1;
+    }
+}
+.scroll-item{
+    height: 70px;
+    width: 50px;
+    top: -150px;
+    left: 50%
+}
+.scroll{
+    width:20px;
+    height: 20px;
+    position: relative;
+    animation: scroll 1s ease-in-out infinite;
+
+}
+@keyframes scroll {
+    0%{
+        top: 0;
+    }
+
+    100%{
+        top:100%;
+    }
+}
+.about {
+    position: relative; 
+    z-index: 1; 
+}
+
+.about::before {
+    content: 'A';
+    color: black;
+    opacity: 0.2;
+    position: absolute; 
+    width: 30px;
+    border-bottom: 2px solid black;
+    transition: 2s ease-in-out; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(200%);
+    z-index: -1;
+}
+.about:hover::before {
+    width: 50px; 
+}
+.p-bar{
+    height: 10px;
+}
+.mission{
+    background-image: url(./../Images/mission.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.list-group-item{
+    background-color: transparent !important;
+    border: none !important;
+    color: white !important;
+}
+.team {
+    position: relative; 
+    z-index: 1; 
+}
+
+.team::before {
+    content: 'O';
+    color: black;
+    opacity: 0.2;
+    position: absolute; 
+    width: 30px;
+    border-bottom: 2px solid black;
+    transition: 2s ease-in-out; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(200%);
+    z-index: -1;
+}
+.team:hover::before {
+    width: 50px; 
+}
+.team-member img{
+    transition: 100ms ease-in-out;
+}
+.team-member:hover img{
+    transform: scale(125%);
+}
+.team-member:hover h3{
+    color: red;
+}
+.team-cover{
+    opacity: 0 !important;
+    transition: 1s ease-in-out !important;
+}
+.team-member:hover .team-cover{
+    opacity: .5 !important;
+    height: 100% !important;
+}
+#Projects{
+    padding-top: 50px !important;
+}
+.project-title {
+    position: relative; 
+}
+.project-title::before {
+    content: 'R';
+    color: black;
+    opacity: 0.2;
+    position: absolute; 
+    width: 30px;
+    border-bottom: 2px solid black;
+    transition: 1s ease-in-out; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(200%);
+}
+.project-title:hover::before {
+    width: 50px; 
+}
+.project-cover{
+    height: 0 !important;
+    overflow: hidden;
+    transition: 1s ease-in-out; 
+}
+.project-cover-over:hover .project-cover{
+    height: 100% !important;
+}
+.project-cover-over img{
+    transition: 250ms ease-in-out;    
+}
+.project-cover-over:hover img{
+    transform: scale(125%);
+}
+#Services{
+    padding-top: 50px !important;
+}
+.service-title {
+    position: relative; 
+}
+.service-title::before {
+    content: 'S';
+    color: black;
+    opacity: 0.2;
+    position: absolute; 
+    width: 30px;
+    border-bottom: 2px solid black;
+    transition: 1s ease-in-out; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(200%);
+}
+.reviews-title:hover::before {
+    width: 50px; 
+}
+.reviews-title {
+    position: relative; 
+}
+.reviews-title::before {
+    content: 'C';
+    color: black;
+    opacity: 0.2;
+    position: absolute; 
+    width: 30px;
+    border-bottom: 2px solid black;
+    transition: 1s ease-in-out; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(200%);
+}
+.reviews-title:hover::before {
+    width: 50px; 
+}
+#Blog{
+    padding-top: 25px;
+}
+.blog-title:hover::before {
+    width: 50px; 
+}
+.blog-title {
+    position: relative; 
+}
+.blog-title::before {
+    content: 'B';
+    color: black;
+    opacity: 0.2;
+    position: absolute; 
+    width: 30px;
+    border-bottom: 2px solid black;
+    transition: 1s ease-in-out; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(200%);
+}
+.blog-title:hover::before {
+    width: 50px; 
+}
+.post-tag{
+    transition: 250ms ease-in-out;
+}
+.post-tag:hover{
+    color: red !important;
+}
+.post-img{
+    transition: 250ms ease-in-out;
+}
+.post-img:hover{
+    transform: scale(125%);
+}
+#Price{
+    padding-top: 50px;
+    background-image: url(./../Images/pricing.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.special-text{
+    font-size: 100px;
+    font-weight: 600;
+    position: relative;
+}
+.special-text::before{
+    content: '$';
+    font-size: 30px;
+    position: absolute;
+    top: 25%;
+    right: 100%;
+}
+.offer, .offer2, .offer2 a{
+    transition: 500ms ease-in-out;
+}
+.price:hover .offer{
+    color: red !important;
+}
+.offer2:hover{
+    background-color: red !important;
+}
+.offer2:hover a{
+    background-color: red !important;
+}
+.offer2:hover .offer{
+    color: red !important;
+}
+.price2{
+    transform: translateY(-5%);
+}
+.ribbon{
+    position: absolute;
+    width: 50%;
+    transform: rotate(-50deg);
+    top: 10%;
+    left: -15%;
+}
+.GetInTouch {
+    position: relative; 
+}
+.GetInTouch::before {
+    content: 'G';
+    color: black;
+    opacity: 0.2;
+    position: absolute; 
+    width: 30px;
+    border-bottom: 2px solid black;
+    transition: 1s ease-in-out; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(200%);
+}
+.GetInTouch:hover::before {
+    width: 50px; 
+}
+.nav-icon {
+    height: 50px;
+    width: 50px;
+    top: 50%;
+    right: -50%;
+    transform: translatey(-50%);
+}
+#Footer{
+    margin-top: 0;
+    background-color: black;
+    background-image: url(./../Images/dotted-map.png);
+    background-size:cover;
+}
+
+
