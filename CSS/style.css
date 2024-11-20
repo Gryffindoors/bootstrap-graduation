@@ -253,6 +253,9 @@
     left: 50%;
     transform: translate(-50%, -50%) scale(200%);
 }
+.service-title:hover::before {
+    width: 50px;
+}
 
 .reviews-title:hover::before {
     width: 50px;
