@@ -48,7 +48,8 @@
   width: 50px; 
   height: 50px; 
   background-color: transparent; 
-  border-radius: 5%; 
+  border: white solid 2px;
+  border-radius: 15%;
   display: flex;
   padding: 15px;
   align-items: center;
@@ -67,22 +68,23 @@
   width: 30px; 
   height: 30px;
   color: white !important;
+  text-shadow: -1px,-1px #000 !important;
 }
 
 .carousel-control-prev {
   left: 1%;
-  top: 15%;
+  top: 25%;
 }
 
 .carousel-control-next {
   left: 1%;
-  top: 25%; 
+  top: 35%; 
 }
 
 
 .scroll-item {
     height: 70px;
-    width: 50px;
+    width: 35px;
     top: -150px;
     left: 50%
 }
@@ -112,12 +114,11 @@
 
 .about::before {
     content: 'A';
-    color: black;
-    opacity: 0.2;
+    color: lightgrey;
     position: absolute;
     width: 30px;
     border-bottom: 2px solid black;
-    transition: 2s ease-in-out;
+    transition: 1s ease-in-out;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(200%);
@@ -152,12 +153,11 @@
 
 .team::before {
     content: 'O';
-    color: black;
-    opacity: 0.2;
+    color: lightgrey;
     position: absolute;
     width: 30px;
     border-bottom: 2px solid black;
-    transition: 2s ease-in-out;
+    transition: 1s ease-in-out;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(200%);
@@ -169,7 +169,7 @@
 }
 
 .team-member img {
-    transition: 100ms ease-in-out;
+    transition: 250ms ease-in-out;
 }
 
 .team-member:hover img {
@@ -196,12 +196,12 @@
 
 .project-title {
     position: relative;
+    z-index: 0;
 }
 
 .project-title::before {
     content: 'R';
-    color: black;
-    opacity: 0.2;
+    color: lightgrey;
     position: absolute;
     width: 30px;
     border-bottom: 2px solid black;
@@ -209,6 +209,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(200%);
+    z-index: -1;
 }
 
 .review{
@@ -243,12 +244,12 @@
 
 .service-title {
     position: relative;
+    z-index: 1;
 }
 
 .service-title::before {
     content: 'S';
-    color: black;
-    opacity: 0.2;
+    color: lightgrey;
     position: absolute;
     width: 30px;
     border-bottom: 2px solid black;
@@ -256,6 +257,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(200%);
+    z-index: -1;
 }
 .service-title:hover::before {
     width: 50px;
@@ -267,12 +269,12 @@
 
 .reviews-title {
     position: relative;
+    z-index: 1;
 }
 
 .reviews-title::before {
     content: 'C';
-    color: black;
-    opacity: 0.2;
+    color: lightgrey;
     position: absolute;
     width: 30px;
     border-bottom: 2px solid black;
@@ -280,6 +282,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(200%);
+    z-index: -1;
 }
 
 .reviews-title:hover::before {
@@ -296,12 +299,12 @@
 
 .blog-title {
     position: relative;
+    z-index: 1;
 }
 
 .blog-title::before {
     content: 'B';
-    color: black;
-    opacity: 0.2;
+    color: lightgrey;
     position: absolute;
     width: 30px;
     border-bottom: 2px solid black;
@@ -309,6 +312,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(200%);
+    z-index: -1;
 }
 
 .blog-title:hover::before {
@@ -389,12 +393,12 @@
 
 .GetInTouch {
     position: relative;
+    z-index: 1;
 }
 
 .GetInTouch::before {
     content: 'G';
-    color: black;
-    opacity: 0.2;
+    color: lightgrey;
     position: absolute;
     width: 30px;
     border-bottom: 2px solid black;
@@ -402,6 +406,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(200%);
+    z-index: -1;
 }
 
 .GetInTouch:hover::before {
@@ -446,6 +451,7 @@
     background-color: black;
     background-image: url(./../Images/dotted-map.png);
     background-size: cover;
+    background-repeat: no-repeat;
 }
 .red-link{
     transition: 100ms ease-in-out;
