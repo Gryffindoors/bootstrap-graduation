@@ -224,6 +224,8 @@
     height: 0 !important;
     overflow: hidden;
     transition: 1s ease-in-out;
+    transform: scale(95%) !important;
+    margin: auto !important;
 }
 
 .project-cover-over:hover .project-cover {
